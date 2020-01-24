@@ -37,6 +37,13 @@ A few notes on the provided Docker image:
 Experiments for a particular environment can be run using:
 
 ```
+python scripts/mbexp.py -env cartpole -logdir ~/Documents/data/cartpole_model
+python scripts/render.py -env cartpole -logdir ~/Documents/data/cartpole_model -model-dir ~/Documents/data/cartpole_model/2020-01-21--15\:27\:56
+```
+
+
+
+```
 python scripts/mbexp.py
     -env    ENV       (required) The name of the environment. Select from
                                  [cartpole, reacher, pusher, halfcheetah].
